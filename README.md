@@ -2,35 +2,17 @@
 
   SCMI30-IITRPR contains images taken from 30 smartphone cameras, of various renowned brands like Vivo, Oppo, Realme, Samsung, OnePlus, Nothing, Poco, Motorola, Redmi, and Apple. The dataset covers a broad spectrum of smartphone costs, catering to diverse demographic groups. The devices also have different operating systems. Images are captured in default auto-settings, ensuring consistent focus, white balance, and High Dynamic Range (HDR). All the images are saved in the existing jpg format.
 
-## Table Of Contents
-* [Declaration](#declartion)
-    * [Declaration of competing interest](#declareinterest)
-    * [Declaration of Code/ Reproducibility](#declarecode)
-* [How to run the codes](#getting-started)
-    * [Prepare the environment](#prep-env)
-    * [Create train test split of the data](#traintestsplit)
-    * [How to split folders should look like](#dirstructure)
-    * [Command for generating patches](#genpatches)
-    * [Trained Model weights](#downloadweights)
-    * [Testing out different methods](#test)
-* [Acknowledgements](#acknowledgements)
-* [Citation](#cite)
-* [License](#license)
-* [Authors](#authors)
+## Declaration
 
-
-## [Declaration](#declaration)
-
-### [Declaration of competing interest](#declareinterest)
+### Declaration of competing interest
 The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper. 
 
-### [Declaration of Code/ Reproducibility](#declarecode)
+### Declaration of Code/ Reproducibility
 All the prior CMI methods are self implemented using pytorch framework and python.
 
+## How to run the codes
 
-## [How to run the codes](#getting-started)
-
-### [Prepare the environment](#prep-env)
+### Prepare the environment
 
 `pip install requirements.txt`
 
@@ -40,11 +22,11 @@ You can create a new conda enviromnent using `conda create --name <env_name> pyt
 
 For eg: `conda create --name scmi30test python=3.11`
 
-### [Create train test split of the data](#traintestsplit)
+### Create train test split of the data
 
 Use the csv files present at [Link to Dataset](https://www.kaggle.com/dsv/7589186) to create the train and test splits. The image labels used for creating the test split is present for random, similar and merged. Merged split is essentially combination of random and similar splits. All the data is individually 80:20 splitted among the classes to maintain equal representation of the classes in train and test sets.
 
-### [How to split folders should look like](#dirstructure)
+### How to split folders should look like
 
 <pre>
 data_split
@@ -77,7 +59,7 @@ data_split
         |-- D30_Vivo_Y75
 </pre>
 
-### [Command for generating patches](#genpatches)
+### Command for generating patches
 
 `python <patch_script.py> path/to/base/dir/having/train/test/split`
 
@@ -87,11 +69,11 @@ Run: `python rana_patches.py data_split/`
 
 All the codes for generation of patches can be found inside Patches_Codes
 
-### [Trained Model weights](#downloadweights)
+### Trained Model weights
 
 You can download the trained model weights by using the google drive link: [Google Drive](https://drive.google.com/drive/folders/1Fp242mDkF5BjmKLC-8W19M3sUwIwCQvz?usp=sharing)
 
-### [Testing out different methods](#test)
+### Testing out different methods
 
 To test any method presented in the paper use the following commands.
 
@@ -103,10 +85,10 @@ Note: To run `chen_test.py`, no need to pass the patched data. Directly pass the
 
 Example: `python chen_test.py --data /data/similar/test/ --model chen_`
 
-## [Acknowledgements](#acknowledgements)
+## Acknowledgements
 We thank our colleagues from the CSE Department, Indian Institute of Technology Ropar for their time and support during the creation of the SCMI30-IITRPR dataset.
 
-## [Citation](#cite)
+## Citation
 
 ```bibtex
 @misc{kapil rana_abhilasha s jadhav_protyay dey_vishwas rathi_puneet goyal_gaurav sharma_2024,
@@ -119,10 +101,10 @@ We thank our colleagues from the CSE Department, Indian Institute of Technology 
 }
 ```
 
-## [License](#license)
+## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/IPSA-Lab/scmi30-iitrpr/blob/main/LICENSE)
 
-## [Authors](#authors)
+## Authors
 
 * Kapil Rana - Computer Science and Engineering, Indian Institute of Technology Ropar, Punjab, India
 * Protyay Dey - Computer Science and Engineering, Indian Institute of Technology Ropar, Punjab, India
