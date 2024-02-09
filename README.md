@@ -16,7 +16,10 @@ All the prior CMI methods are self implemented using pytorch framework and pytho
 
 `pip install requirements.txt`
 
-This will install all the dependencies needed to run the codes. It is highly recommended that you create a new environment when trying out the codes.
+This will install all the dependencies needed to run the codes. 
+
+> [!Tip]
+> It is highly recommended that you create a new environment when trying out the codes.
 
 You can create a new conda enviromnent using `conda create --name <env_name> python=<version>`. 
 
@@ -81,9 +84,9 @@ To test any method presented in the paper use the following commands.
 
 This will start the python script for generating the results. One can use different combinations to generate the entire results table present in the paper.
 
-Note: To run `chen_test.py`, no need to pass the patched data. Directly pass the test folder of either `random`, `similar` or `merged`
-
-Example: `python chen_test.py --data /data/similar/test/ --model chen_`
+>[!Note]
+>To run `chen_test.py`, no need to pass the patched data. Directly pass the test folder of either `random`, `similar` or `merged`. <br>
+>Example: `python chen_test.py --data /data/similar/test/ --model chen_`
 
 ## Acknowledgements
 We thank our colleagues from the CSE Department, Indian Institute of Technology Ropar for their time and support during the creation of the SCMI30-IITRPR dataset.
