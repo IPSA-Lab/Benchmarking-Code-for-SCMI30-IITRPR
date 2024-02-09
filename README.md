@@ -87,11 +87,17 @@ You can download the trained model weights by using the google drive link: [Goog
 
 ### Testing out different methods
 
-To test any method presented in the paper use the following commands.
+To test any methods use the following commands.
+
+Different methods available:
+* Rana et. al
+* Rafi et. al
+* Chen et. al
+* Liu et. al
 
 `python <method>_test.py --data path/to/patch/data --model path/to/trained/model`
 
-This will start the python script for generating the results. One can use different combinations to generate the entire results table present in the paper.
+This will start the python script for generating the results.
 
 >[!Note]
 >To run `chen_test.py`, no need to pass the patched data. Directly pass the test folder of either `random`, `similar` or `merged`. <br>
@@ -125,6 +131,12 @@ We thank our colleagues from the CSE Department, Indian Institute of Technology 
 * Puneet Goyal - Computer Science and Engineering, Indian Institute of Technology Ropar, Punjab, India
 * Gaurav Sharma - Electrical and Computer Engineering, University of Rochester, Rochester, New York, USA
 
+## References
+
+> Kapil Rana, Puneet Goyal, and Gaurav Sharma, “Dual-branch convolutional neural network for robust camera model identification,” Expert Systems with Applications, vol. 238, pp. 121828, 2024
+> Abdul Muntakim Rafi, Thamidul Islam Tonmoy, Uday Kamal, QM Jonathan Wu, and Md Kamrul Hasan, “Remnet: remnant convolutional neural network for camera model identification,” Neural Computing and Applications, vol. 33, pp. 3655–3670, 2021
+> Yunxia Liu, Zeyu Zou, Yang Yang, Ngai-Fong Bonnie Law, and Anil Anthony Bharath, “Efficient source camera identification with diversity-enhanced patch selection and deep residual prediction,” Sensors, vol. 21, no. 14, pp. 4701, 2021
+> Yunshu Chen, Yue Huang, and Xinghao Ding, “Camera model identification with residual neural network,” in 2017 IEEE International Conference on Image Processing (ICIP). IEEE, 2017, pp. 4337–4341
 
 
 
