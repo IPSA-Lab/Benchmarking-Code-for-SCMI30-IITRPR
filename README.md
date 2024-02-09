@@ -14,6 +14,11 @@ All the prior CMI methods are self implemented using pytorch framework and pytho
 
 For the detailed overview of the dataset kindly refer [Dataset Overview](https://www.kaggle.com/dsv/7589186)
 
+## Intended Usage
+> [!Note]
+> The SCMI30-IITRPR dataset must be used for research and education purposes only. It can be beneficial for tasks like image classification, object recognition, camera model identification, etc. Moreover, the dataset enables comparison between different smartphone cameras and facilitates the development of algorithms to optimize device
+recognition. This dataset is designed in such a way that it covers a wide range of images for intensive image training of the model. 
+
 ## How to run the codes
 
 ### Prepare the environment
