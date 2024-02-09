@@ -293,7 +293,7 @@ if __name__ == "__main__":
     data_path = os.path.join(img_dir,'*csv')
     files = glob.glob(data_path)
     
-    with open(os.path.join(csv_dir + 'Image_Level_Results.csv'), 'a+', newline='') as file:
+    with open(os.path.join(csv_dir + 'Image_Level_Results.csv'), 'w', newline='') as file:
         writer = csv.writer(file)
         writer.writerow(["Image Class Label","Number of Images",\
                          "Correct Predicted Images",\
