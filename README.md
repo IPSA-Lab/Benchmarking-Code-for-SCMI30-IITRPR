@@ -90,7 +90,7 @@ This will start the python script for generating the results. One can use differ
 
 >[!Note]
 >To run `chen_test.py`, no need to pass the patched data. Directly pass the test folder of either `random`, `similar` or `merged`. <br>
->Example: `python chen_test.py --data /data/similar/test/ --model chen_`
+>Example: `python chen_test.py --data /data/similar/test/ --model Chen_trained_model_random_final`
 
 ## Acknowledgements
 We thank our colleagues from the CSE Department, Indian Institute of Technology Ropar for their time and support during the creation of the SCMI30-IITRPR dataset.
