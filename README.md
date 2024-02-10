@@ -1,6 +1,6 @@
 # SCMI30-IITRPR: Smartphone Camera Model Identification Dataset Comprising both Similar and Random Content Image Sets
 
-  SCMI30-IITRPR contains images captured using 30 smartphone cameras, of various renowned brands like Vivo, Oppo, Realme, Samsung, OnePlus, Nothing, Poco, Motorola, Redmi, and Apple. The dataset covers a broad spectrum of smartphone costs, catering to diverse demographic groups. The devices also have different operating systems. Images are captured in default auto-settings, ensuring consistent focus, white balance, and High Dynamic Range (HDR). All the images are saved in the existing .jpg format.
+  SCMI30-IITRPR contains images captured using 30 smartphone cameras, of various renowned brands like Vivo, Oppo, Realme, Samsung, OnePlus, Nothing, Poco, Motorola, Redmi, and Apple. The dataset covers a broad spectrum of smartphone costs, catering diverse demographic groups. The devices also have different operating systems. Images are captured in default auto-settings, ensuring consistent focus, white balance, and High Dynamic Range (HDR). All the images are saved in the existing .jpg format.
 
 ## Declaration
 
@@ -16,10 +16,9 @@ For the detailed overview of the dataset kindly refer [Dataset Overview](https:/
 
 ## Intended Usage
 > [!Note]
-> The SCMI30-IITRPR dataset must be used for research and education purposes only. It can be beneficial for tasks like image classification, object recognition, camera model identification, etc. Moreover, the dataset enables comparison between different smartphone cameras and facilitates the development of algorithms to optimize device
-recognition. This dataset is designed in such a way that it covers a wide range of images for intensive image training of the model. 
+> The SCMI30-IITRPR dataset must be used for research and education purposes only. It can be beneficial for tasks like image classification, object recognition, camera model identification, etc. Moreover, the dataset enables comparison between different smartphone cameras and facilitates the development of algorithms to optimize device recognition. This dataset is designed in such a way that it covers a wide range of images for intensive image training of the model. 
 
-## How to run the codes
+## Steps to run the codes
 
 ### Preparing the environment
 
@@ -28,17 +27,17 @@ recognition. This dataset is designed in such a way that it covers a wide range 
 This will install all the dependencies needed to run the codes. 
 
 > [!Tip]
-> It is highly recommended that you create a new environment when trying out the codes.
+> It is highly recommended that we create a new environment when executing these codes.
 
-You can create a new conda enviromnent using `conda create --name <env_name> python=<version>`. 
+New conda enviromnent can be created using `conda create --name <env_name> python=<version>`. 
 
 For eg: `conda create --name scmi30test python=3.11`
 
 ### Creating train test split of the data
 
-Use the csv files present at [Link to Dataset](https://www.kaggle.com/dsv/7589186) to create the train and test splits. The image labels used for creating the test split is present for random, similar and merged. Merged split is essentially combination of random and similar splits. All the data is individually 80:20 splitted among the classes to maintain equal representation of the classes in train and test sets.
+Using the csv files present at [Link to Dataset](https://www.kaggle.com/dsv/7589186) train and test splits can be created. The image labels used for creating the test split is present for random, similar and merged. Merged split is essentially combination of random and similar splits. All the data is individually 80:20 splitted among the classes to maintain equal representation of the classes in train and test sets.
 
-### Directory structure after train test split
+### Directory structure after splitting the data
 
 <pre>
 data_split
@@ -79,15 +78,15 @@ For eg: If the base dir having the train test split is named: `data_split`
 
 Run: `python rana_patches.py data_split/`
 
-All the codes for generation of patches can be found inside `Patches_Codes`
+All the codes for generation of patches can be found in `Patches_Codes` folder.
 
 ### Trained Model weights
 
-You can download the trained model weights by using the google drive link: [Google Drive](https://drive.google.com/drive/folders/1Fp242mDkF5BjmKLC-8W19M3sUwIwCQvz?usp=sharing)
+The trained model weights can be downloaded using the google drive link: [Google Drive](https://drive.google.com/drive/folders/1Fp242mDkF5BjmKLC-8W19M3sUwIwCQvz?usp=sharing)
 
 ### Testing different methods
 
-To test any methods use the following commands.
+To test the models following commands can be used.
 
 Different methods available:
 * Rana et. al
@@ -98,10 +97,10 @@ Different methods available:
 
 `python <method>_test.py --data path/to/patch/data --model path/to/trained/model`
 
-This will start the python script for generating the results.
+This python script will generate results corresponding to respective trained models.
 
 >[!Note]
->To run `chen_test.py`, no need to pass the patched data. Directly pass the test folder of either `random`, `similar` or `merged`. <br>
+>To run `chen_test.py`, we don't have to pass the patched data. We can straight away pass the test folder of either `random`, `similar` or `merged`. <br>
 >Example: `python chen_test.py --data /data/similar/test/ --model Chen_trained_model_random_final`
 
 ## Acknowledgements
