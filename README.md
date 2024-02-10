@@ -1,6 +1,6 @@
 # SCMI30-IITRPR: Smartphone Camera Model Identification Dataset Comprising both Similar and Random Content Image Sets
 
-  SCMI30-IITRPR contains images captured using 30 smartphone cameras, of various renowned brands like Vivo, Oppo, Realme, Samsung, OnePlus, Nothing, Poco, Motorola, Redmi, and Apple. The dataset covers a broad spectrum of smartphone costs, catering diverse demographic groups. The devices also have different operating systems. Images are captured in default auto-settings, ensuring consistent focus, white balance, and High Dynamic Range (HDR). All the images are saved in the existing .jpg format.
+  SCMI30-IITRPR contains images captured using 30 smartphone cameras, of various renowned brands like Vivo, Oppo, Realme, Samsung, OnePlus, Nothing, Poco, Motorola, Redmi, and Apple. The dataset covers a broad spectrum of smartphone costs, catering to diverse demographic groups. The devices also have different operating systems. Images are captured in default auto-settings, ensuring consistent focus, white balance, and High Dynamic Range (HDR). All the images are saved in the existing .jpg format.
 
 ## Declaration
 
