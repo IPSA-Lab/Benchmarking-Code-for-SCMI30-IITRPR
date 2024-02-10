@@ -120,7 +120,7 @@ We thank our colleagues from the CSE Department, Indian Institute of Technology 
 ```
 
 ## License
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/IPSA-Lab/scmi30-iitrpr/blob/main/LICENSE)
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/IPSA-Lab/scmi30-iitrpr/blob/main/LICENSE)
 
 ## Authors
 
