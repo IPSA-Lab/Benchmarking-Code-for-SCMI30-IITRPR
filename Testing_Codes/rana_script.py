@@ -191,7 +191,7 @@ class Net(nn.Module):
         
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='Your program description')
+    parser = argparse.ArgumentParser()
     parser.add_argument('--data', required=True, help='Data directory path')
     parser.add_argument('--model', required=True, help='Model path')
     args = parser.parse_args()
@@ -234,10 +234,10 @@ if __name__ == "__main__":
     a = -1
 
     # Check if Results folder exists
-    results_folder = "Results"
+    results_folder = "Results_Rana"
     if os.path.exists(results_folder):
         # If it exists, delete the folder and its content
-        print("Deleting existing Results folder...")
+        print("Deleting existing Results_Rana folder...")
         for file in os.listdir(results_folder):
             file_path = os.path.join(results_folder, file)
             try:
@@ -289,7 +289,7 @@ if __name__ == "__main__":
                 writer.writerow([batch_idx, patch_filename, y_true, y_pred, prob_y_pred])
                 
                 
-    csv_dir = img_dir = "Results/"
+    csv_dir = img_dir = "Results_Rana/"
     data_path = os.path.join(img_dir,'*csv')
     files = glob.glob(data_path)
     
@@ -420,6 +420,6 @@ if __name__ == "__main__":
               
     df = pd.read_csv(os.path.join(csv_dir + 'Image_Level_Results.csv'))
 
-    ILA = sum(df['Correct Predicted Images']) / sum(df['Number of Images'])
+    ILA = sum(df['Correct Predicted Images']) / sum(df['Number of Images']) * 100
     
-    print(f"Image Level Accuracy: {ILA}")
+    print(f"Image Level Accuracy: {ILA}%")
