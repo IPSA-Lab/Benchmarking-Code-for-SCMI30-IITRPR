@@ -22,7 +22,7 @@ For the detailed overview of the dataset kindly refer [Dataset Overview](https:/
 
 ### Preparing the environment
 
-`pip install requirements.txt`
+`pip install -r requirements.txt`
 
 This will install all the dependencies needed to run the codes. 
 
