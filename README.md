@@ -21,7 +21,7 @@ recognition. This dataset is designed in such a way that it covers a wide range 
 
 ## How to run the codes
 
-### Prepare the environment
+### Preparing the environment
 
 `pip install requirements.txt`
 
@@ -34,11 +34,11 @@ You can create a new conda enviromnent using `conda create --name <env_name> pyt
 
 For eg: `conda create --name scmi30test python=3.11`
 
-### Create train test split of the data
+### Creating train test split of the data
 
 Use the csv files present at [Link to Dataset](https://www.kaggle.com/dsv/7589186) to create the train and test splits. The image labels used for creating the test split is present for random, similar and merged. Merged split is essentially combination of random and similar splits. All the data is individually 80:20 splitted among the classes to maintain equal representation of the classes in train and test sets.
 
-### How to split folders should look like
+### Directory structure after train test split
 
 <pre>
 data_split
@@ -71,7 +71,7 @@ data_split
         |-- D30_Vivo_Y75
 </pre>
 
-### Command for generating patches
+### Script for generating patches
 
 `python <patch_script.py> path/to/base/dir/having/train/test/split`
 
@@ -79,13 +79,13 @@ For eg: If the base dir having the train test split is named: `data_split`
 
 Run: `python rana_patches.py data_split/`
 
-All the codes for generation of patches can be found inside Patches_Codes
+All the codes for generation of patches can be found inside `Patches_Codes`
 
 ### Trained Model weights
 
 You can download the trained model weights by using the google drive link: [Google Drive](https://drive.google.com/drive/folders/1Fp242mDkF5BjmKLC-8W19M3sUwIwCQvz?usp=sharing)
 
-### Testing out different methods
+### Testing different methods
 
 To test any methods use the following commands.
 
@@ -94,6 +94,7 @@ Different methods available:
 * Rafi et. al
 * Chen et. al
 * Liu et. al
+* Bennabhaktula et. al
 
 `python <method>_test.py --data path/to/patch/data --model path/to/trained/model`
 
