@@ -256,7 +256,7 @@ class CrossEntropy(nn.Module):
    
 if __name__ == "__main__":
     criterion = CrossEntropy()
-    parser = argparse.ArgumentParser(description='Your program description')
+    parser = argparse.ArgumentParser()
     parser.add_argument('--data', required=True, help='Data directory path')
     parser.add_argument('--model', required=True, help='Model path')
     args = parser.parse_args()
@@ -302,10 +302,10 @@ if __name__ == "__main__":
 
     a = -1
 
-    results_folder = "Results"
+    results_folder = "Results_Liu"
     if os.path.exists(results_folder):
         # If it exists, delete the folder and its content
-        print("Deleting existing Results folder...")
+        print("Deleting existing Results_Liu folder...")
         for file in os.listdir(results_folder):
             file_path = os.path.join(results_folder, file)
             try:
@@ -328,7 +328,7 @@ if __name__ == "__main__":
               print("Yes_Class",d)
               a= d
               z = d
-              file_class = "Results/Test_Class_"+str(z)+".csv"
+              file_class = os.path.join(results_folder, f"Test_Class_{z}.csv")
 
               with open(file_class, 'a+', newline='') as file:
                   writer = csv.writer(file)
@@ -360,7 +360,7 @@ if __name__ == "__main__":
                   writer = csv.writer(file)
                   writer.writerow([batch_idx,patch_filename,y_true,y_pred,prob_y_pred])
 
-    csv_dir = img_dir = "Results/"
+    csv_dir = img_dir = "Results_Liu/"
     data_path = os.path.join(img_dir,'*csv')
     files = glob.glob(data_path)
 
@@ -445,8 +445,6 @@ if __name__ == "__main__":
                     total_patches_perclass = total_patches_perclass + 1
                     arr_pred_patches.append(pred_patch_class)
                     arr_pred_patches_prob.append(pred_patch_prob)
-
-
 
         total_images_perclass = total_images_perclass + 1
 
