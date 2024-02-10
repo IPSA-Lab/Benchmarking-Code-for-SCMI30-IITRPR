@@ -136,7 +136,7 @@ class Net(nn.Module):
         
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='Your program description')
+    parser = argparse.ArgumentParser()
     parser.add_argument('--data', required=True, help='Data directory path')
     parser.add_argument('--model', required=True, help='Model path')
     args = parser.parse_args()
