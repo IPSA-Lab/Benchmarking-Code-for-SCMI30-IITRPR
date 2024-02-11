@@ -1,6 +1,6 @@
-# SCMI30-IITRPR: Smartphone Camera Model Identification Dataset Comprising both Similar and Random Content Image Sets
+# Benchmarking Code for SCMI30-IITRPR: Smartphone Camera Model Identification Dataset Comprising both Similar and Random Content Image Sets
 
-  SCMI30-IITRPR contains images captured using 30 smartphone cameras, of various renowned brands like Vivo, Oppo, Realme, Samsung, OnePlus, Nothing, Poco, Motorola, Redmi, and Apple. The dataset covers a broad spectrum of smartphone costs, catering to diverse demographic groups. The devices also have different operating systems. Images are captured in default auto-settings, ensuring consistent focus, white balance, and High Dynamic Range (HDR). All the images are saved in the existing .jpg format.
+  This repository provides code and trained models for reproducing the results presented in the paper "SCMI30-IITRPR: Smartphone Camera Model Identification Dataset Comprising both Similar and Random Image Sets,'' K. Rana, A. Jadhav, P. Dey, V. Rathi, P. Goyal, and G. Sharma, submitted for review. Users are referred to the paper for details of the benchmarks. Researchers that make use of the code should cite the paper.
 
 ## Declaration
 
@@ -12,11 +12,12 @@ All the prior CMI methods are self implemented using pytorch framework and pytho
 
 ## Dataset Description
 
-For the detailed overview of the dataset kindly refer [Dataset Overview](https://www.kaggle.com/dsv/7589186)
+For the detailed overview of the dataset kindly refer [Dataset Overview]( https://doi.org/10.34740/kaggle/dsv/7589186)
 
 ## Intended Usage
 > [!Note]
-> The SCMI30-IITRPR dataset must be used for research and education purposes only. It can be beneficial for tasks like image classification, object recognition, camera model identification, etc. Moreover, the dataset enables comparison between different smartphone cameras and facilitates the development of algorithms to optimize device recognition. This dataset is designed in such a way that it covers a wide range of images for intensive image training of the model. 
+> The SCMI30-IITRPR dataset must be used for research and education purposes only. The dataset is designed primarily to facilitate research on camera model identification (CMI) but could also be beneficial for other tasks such as individual camera device forensics, image classification, and object recognition. 
+> Researchers that make use of the dataset should cite the [dataset]( https://doi.org/10.34740/kaggle/dsv/7589186) and the associated paper ``SCMI30-IITRPR: Smartphone Camera Model Identification Dataset Comprising both Similar and Random Image Sets,'' K. Rana, A. Jadhav, P. Dey, V. Rathi, P. Goyal, and G. Sharma, submitted for review.
 
 ## Steps to run the codes
 
@@ -35,7 +36,7 @@ For eg: `conda create --name scmi30test python=3.11`
 
 ### Creating train test split of the data
 
-Using the csv files present at [Link to Dataset](https://www.kaggle.com/dsv/7589186) train and test splits can be created. The image labels used for creating the test split is present for random, similar and merged. Merged split is essentially combination of random and similar splits. All the data is individually 80:20 splitted among the classes to maintain equal representation of the classes in train and test sets.
+Using the csv files present at [Link to Dataset](https://doi.org/10.34740/kaggle/dsv/7589186) train and test splits can be created. The image labels used for creating the test split is present for random, similar and merged. Merged split is essentially combination of random and similar splits. All the data is individually 80:20 splitted among the classes to maintain equal representation of the classes in train and test sets.
 
 ### Directory structure after splitting the data
 
@@ -109,18 +110,22 @@ We thank our colleagues from the CSE Department, Indian Institute of Technology 
 ## Citation
 
 ```bibtex
-@misc{kapil rana_abhilasha s jadhav_protyay dey_vishwas rathi_puneet goyal_gaurav sharma_2024,
-  	title={SCMI30-IITRPR},
-  	url={https://www.kaggle.com/dsv/7589186},
-  	DOI={10.34740/KAGGLE/DSV/7589186},
-  	publisher={Kaggle},
-  	author={Kapil Rana and Abhilasha S Jadhav and Protyay Dey and Vishwas Rathi and Puneet Goyal and Gaurav Sharma},
-  	year={2024}
+@misc{kapil_rana_abhilasha_s_jadhav_protyay_dey_vishwas_rathi_puneet_goyal_gaurav_sharma_2024,
+	title={SCMI30-IITRPR},
+	url={https://www.kaggle.com/dsv/7589186},
+	DOI={10.34740/KAGGLE/DSV/7589186},
+	publisher={Kaggle},
+	author={Kapil Rana and Abhilasha S Jadhav and Protyay Dey and Vishwas Rathi and Puneet Goyal and Gaurav Sharma},
+	year={2024}
 }
 ```
 
 ## License
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://github.com/IPSA-Lab/scmi30-iitrpr/blob/main/LICENSE)
+
+## Disclaimer
+
+The code is provided "as is" with ABSOLUTELY NO WARRANTY expressed or implied. Use at your own risk.
 
 ## Authors
 
