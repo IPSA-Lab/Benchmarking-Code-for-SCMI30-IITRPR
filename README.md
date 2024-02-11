@@ -90,11 +90,11 @@ The trained model weights can be downloaded using the google drive link: [Google
 To test the models following commands can be used.
 
 Different methods available:
-* Rana et. al [1](#ref1)
-* Rafi et. al [2](#ref2)
-* Chen et. al [3](#ref3)
-* Liu et. al [4](#ref4)
-* Bennabhaktula et. al [5](#ref5)
+* [[1]](#ref1) Rana et. al
+* [[2]](#ref2) Rafi et. al
+* [[3]](#ref3) Chen et. al 
+* [[4]](#ref4) Liu et. al 
+* [[5]](#ref5) Bennabhaktula et. al
 
 `python <method>_test.py --data path/to/patch/data --model path/to/trained/model`
 
