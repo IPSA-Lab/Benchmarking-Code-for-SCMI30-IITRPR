@@ -17,7 +17,7 @@ For the detailed overview of the dataset kindly refer [Dataset Overview]( https:
 ## Intended Usage
 > [!Note]
 > The SCMI30-IITRPR dataset must be used for research and education purposes only. The dataset is designed primarily to facilitate research on camera model identification (CMI) but could also be beneficial for other tasks such as individual camera device forensics, image classification, and object recognition. 
-> Researchers that make use of the dataset should cite the [dataset]( https://doi.org/10.34740/kaggle/dsv/7589186) and the associated paper ``SCMI30-IITRPR: Smartphone Camera Model Identification Dataset Comprising both Similar and Random Image Sets,'' K. Rana, A. Jadhav, P. Dey, V. Rathi, P. Goyal, and G. Sharma, submitted for review.
+> Researchers that make use of the dataset should cite the [dataset](#cite) and the associated paper ``SCMI30-IITRPR: Smartphone Camera Model Identification Dataset Comprising both Similar and Random Image Sets,'' K. Rana, A. Jadhav, P. Dey, V. Rathi, P. Goyal, and G. Sharma, submitted for review.
 
 ## Steps to run the codes
 
@@ -90,11 +90,11 @@ The trained model weights can be downloaded using the google drive link: [Google
 To test the models following commands can be used.
 
 Different methods available:
-* Rana et. al
-* Rafi et. al
-* Chen et. al
-* Liu et. al
-* Bennabhaktula et. al
+* Rana et. al [1](#ref1)
+* Rafi et. al [2](#ref2)
+* Chen et. al [3](#ref3)
+* Liu et. al [4](#ref4)
+* Bennabhaktula et. al [5](#ref5)
 
 `python <method>_test.py --data path/to/patch/data --model path/to/trained/model`
 
@@ -107,8 +107,8 @@ This python script will generate results corresponding to respective trained mod
 ## Acknowledgements
 We thank our colleagues from the CSE Department, Indian Institute of Technology Ropar for their time and support during the creation of the SCMI30-IITRPR dataset.
 
-## Citation
-
+## Citation 
+<a name="cite"></a>
 ```bibtex
 @misc{kapil_rana_abhilasha_s_jadhav_protyay_dey_vishwas_rathi_puneet_goyal_gaurav_sharma_2024,
 	title={SCMI30-IITRPR},
@@ -138,10 +138,16 @@ The code is provided "as is" with ABSOLUTELY NO WARRANTY expressed or implied. U
 
 ## References
 
-> Kapil Rana, Puneet Goyal, and Gaurav Sharma, “Dual-branch convolutional neural network for robust camera model identification,” Expert Systems with Applications, vol. 238, pp. 121828, 2024
-> Abdul Muntakim Rafi, Thamidul Islam Tonmoy, Uday Kamal, QM Jonathan Wu, and Md Kamrul Hasan, “Remnet: remnant convolutional neural network for camera model identification,” Neural Computing and Applications, vol. 33, pp. 3655–3670, 2021
-> Yunxia Liu, Zeyu Zou, Yang Yang, Ngai-Fong Bonnie Law, and Anil Anthony Bharath, “Efficient source camera identification with diversity-enhanced patch selection and deep residual prediction,” Sensors, vol. 21, no. 14, pp. 4701, 2021
-> Yunshu Chen, Yue Huang, and Xinghao Ding, “Camera model identification with residual neural network,” in 2017 IEEE International Conference on Image Processing (ICIP). IEEE, 2017, pp. 4337–4341
+* [Kapil Rana, Puneet Goyal, and Gaurav Sharma. "Dual-branch convolutional neural network for robust camera model identification." Expert Systems with Applications, vol. 238, pp. 121828, 2024](https://doi.org/10.1016/j.eswa.2023.121828) <a name="ref1"></a>
+
+* [Abdul Muntakim Rafi, Thamidul Islam Tonmoy, Uday Kamal, QM Jonathan Wu, and Md Kamrul Hasan. "Remnet: Remnant convolutional neural network for camera model identification." Neural Computing and Applications, vol. 33, pp. 3655–3670, 2021](https://doi.org/10.1007/s00521-020-05220-y) <a name="ref2"></a>
+
+* [Yunxia Liu, Zeyu Zou, Yang Yang, Ngai-Fong Bonnie Law, and Anil Anthony Bharath. "Efficient source camera identification with diversity-enhanced patch selection and deep residual prediction." Sensors, vol. 21, no. 14, pp. 4701, 2021](https://doi.org/10.3390/s21144701) <a name="ref3"></a>
+
+* [Yunshu Chen, Yue Huang, and Xinghao Ding. "Camera model identification with residual neural network." in 2017 IEEE International Conference on Image Processing (ICIP). IEEE, 2017, pp. 4337–4341](https://doi.org/10.1109/ICIP.2017.8297101) <a name="ref4"></a>
+
+* [Guru Swaroop Bennabhaktula, Enrique Alegre, Dimka Karastoyanova, and George Azzopardi. "Camera model identification based on forensic traces extracted from homogeneous patches." Expert Systems with Applications, vol. 206, pp. 117769, 2022](https://doi.org/10.1016/j.eswa.2022.117769) <a name="ref5"></a>
+
 
 
 
